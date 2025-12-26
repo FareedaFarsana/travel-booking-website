@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- page Specific Styling -->
+     <style>
+        .booking{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 8%;
+            background: linear-gradient(to right, rgba(18,20,26,0.96), rgba(18,20,26,0.75)), url("images/hero.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .booking-card{
+            box-sizing: border-box;
+            background: rgba(28,31,38,0.95);
+            color: #EAEAEA;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            max-width: 34rem;
+        }
+
+        .booking-form{
+           margin-top: 2rem; 
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.25rem;
+        }
+        .form-row{
+            display: flex;
+            gap: 1rem;
+        }
+        .form-group .form-row{
+            flex: 1;
+        }
+        label{
+           font-size: 0.85rem;
+           margin-bottom: 0.35rem;
+           opacity: 0.9;
+        }
+
+        /* input */
+        input,select{
+            background: #1c1f26;
+            border: 1px solid #2e86ab55;
+            border-radius: 0.5rem;
+            padding: 0.65rem 0.75rem;
+            color:  #eaeaea;
+            font-size: 0.9rem;
+        }
+        input:focus, select:focus{
+            outline: none;
+            border-color: #2e86ab;
+            box-shadow: 0 0 0 2px rgba(46,134,171,0.2);
+        }
+
+        .booking-form .btn-primary{
+            margin-top: 1.5rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media(max-width: 600px){
+            .form-row{
+                flex-direction: column;
+            }
+
+            .booking{
+                padding: 3rem 5%;
+            }
+        }
+     </style>
+
+</head>
+<body>
+    <section class="booking">
+        <div class="booking-card">
+
+            <h1>Plan your Journey</h1>
+            <p>Choose your destination and travel details to begin your adventure.</p>
+
+            <form class="booking-form" onsubmit="showPopup(event)" id="bookingform">
+                <div class="form-group">   
+                    <label>Destination</label>
+                    <input type="text" placeholder="Where do you want to go?" required>
+                </div> 
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Check-in</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Check-out</label>
+                        <input type="date" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Travelers</label>
+                        <select required>
+                            <option value="">Select</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Budget</label>
+                        <select required>
+                            <option value="">Select</option>
+                            <option>Economy</option>
+                            <option>Standard</option>
+                            <option>Luxury</option>
+                        </select>
+                    </div> 
+                </div>
+
+                    <button type="submit" class="btn-primary">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- booking success popup -->
+     <div class="popup-overlay" id="popup">
+        <div class="popup-card">
+            <h2>🎉 Booking Confirmed</h2>
+            <p>Your journey has been successfully planned.</p>
+            <button onclick="closePopup()" class="btn-primary">OK</button>
+        </div>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
