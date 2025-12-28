@@ -6,7 +6,7 @@
     <title>ExploreX - Travel Booking</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- NAVBAR -->
@@ -24,7 +24,8 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#">Bookings</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#">Testimonials</a></li>
                 <li><a href="#">Contact</a></li>
 
                 <li><a href="booking.html" class="nav-btn">Book Now</a></li>
@@ -43,11 +44,145 @@
             <p>Discover breathtaking destinations, curated journeys, and unforgettable travel experiences crafted just for you.</p>
 
             <div class="home-actions">
-                <a href="#destinations" class="btn-primary">Explore Now</a>
+                <a href="#destinations" class="btn-primary">Explore Now<i class="fa-solid fa-arrow-down"></i></a>
                 <a href="#contact" class="btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
+
+    <!-- DESTINATION SECTION -->
+     <section class="destinations" id="destinations">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-subtitle">Handpicked places loved by travelers around the world</p>
+            </div>
+
+            <div class="row g-4 mt-4">
+            <!-- card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card destination-card">
+                    <span class="badge-popular">Popular</span>
+                    <img src="/images/paris.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <!-- rating -->
+                        <div class="rating">★★★★☆<span>(4.7)</span></div>
+                    
+                        <p class="card-text">Experience the romance, art and culture of the City of Lights.</p>
+                        <!-- meta info -->
+                         <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> France</span>
+                            <span><i class="fa-regular fa-clock"></i>5 Days</span>
+                         </div>
+
+                         <!-- price -->
+                          <div class="price">From <strong>$799</strong></div>
+                        
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card destination-card">
+                    <span class="badge-popular">Popular</span>
+                    <img src="/images/dubai.jpg" class="card-img-top" alt="Dubai">
+                    <div class="card-body">
+                        <h5 class="card-title">Dubai</h5>
+                        <!-- rating -->
+                        <div class="rating">★★★★☆<span>(4.6)</span></div>
+
+                        <p class="card-text">Luxury shopping, skyline views, and desert adventures.</p>
+                        <!-- meta info -->
+                         <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> UAE</span>
+                            <span><i class="fa-regular fa-clock"></i> 4 Days</span>
+                         </div>
+
+                         <!-- price -->
+                          <div class="price">From <strong>$699</strong></div>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+             <div class="col-lg-4 col-md-6">
+                <div class="card destination-card">
+                    <span class="badge-popular">Popular</span>
+                    <img src="/images/maldives.png" class="card-img-top" alt="Maldives">
+                    <div class="card-body">
+                        <h5 class="card-title">Maldives</h5>
+                        <!-- rating -->
+                        <div class="rating">★★★★★<span>(4.9)</span></div>
+
+                        <p class="card-text">Crystal-clear waters, luxury resorts, and peaceful vibes.</p>
+                        <!-- meta info -->
+                         <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Maldives</span>
+                            <span><i class="fa-regular fa-clock"></i> 6 Days</span>
+                         </div>
+
+                         <!-- price -->
+                          <div class="price">From <strong>$1,299</strong></div>
+                        <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+     </section>
+
+    <!-- WHY CHOOSE US -->
+     <section class="why-choose-us" id="why-us">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title">Why Choose ExploreX</h2>
+                <p class="section-subtitle">We make travel simple, safe, and unforgettable</p>
+            </div>
+
+            <div class="row g-4 mt-4">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h5>Handpicked Destinations</h5>
+                    <p>Carefully curated places loved by travelers worldwide.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-card">
+                    <i class="fa-solid fa-wallet"></i>
+                    <h5>Best Price Guarantee</h5>
+                    <p>Transparent pricing with no hidden charges.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-card">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <h5>Safe & Secure</h5>
+                    <p>Your safety and privacy are our top priorities.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="why-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h5>24/7 Support</h5>
+                    <p>We’re here for you anytime, anywhere.</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

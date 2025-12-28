@@ -222,6 +222,12 @@ nav ul a:hover{
   font-size: 0.9rem;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.btn-primary i{
+  margin-left: 0.4rem;
+  font-size: 0.85rem;
+}
+
 .btn-primary:hover{
   transform: translateY(-0.15rem);
   box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.4);
@@ -256,5 +262,176 @@ nav ul a:hover{
     align-items: flex-start;
   }
 }
+
+/* DESTINATION SECTION */
+.destinations{
+  padding: 5rem 0;
+  background:linear-gradient(to bottom, #1e2230 0%, #2a2f3f 55%, #dcc38b 100%);
+}
+
+.section-header{
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto 3.5rem;
+}
+.section-title{
+  background: linear-gradient(#C9A66B,#2E86AB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle{
+  font-size: 1rem;
+  color: rgba(240,240,240,0.9);
+  line-height: 1.6;
+}
+
+.destination-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+  background: linear-gradient(180deg, #1c1f26, #262b39);
+  border: none !important;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.35s ease;
+}
+
+.badge-popular{
+  position: absolute;
+  top:1rem;
+  left: 1rem;
+  background: linear-gradient(135deg,#C9A66B,#2E86AB);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.35rem 0.6rem;
+  border-radius: 1rem;
+  letter-spacing: 0.04rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.destination-card img{
+  height: 13.75rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.destination-card .card-body{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: #EAEAEA;
+  padding: 1.4rem;
+}
+.destination-card .btn{
+  margin-top: auto;
+}
+
+.destination-card .card-title{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #F3F4F6;
+}
+
+.destination-card .card-text{
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin: 0.8rem 0 1.2rem;
+}
+
+.destination-card:hover{
+  transform: translateY(-0.4rem);
+  box-shadow: 0 1.2rem 2.2rem rgba(0,0,0,0.5), 0 0 0 1px rgba(46,134,171,0.35);
+}
+
+.rating{
+  font-size: 0.85rem;
+  color: #C9A66B;
+  font-weight: bold;
+  margin: 0.3rem 0 0.6rem;
+}
+.rating span{
+  color: rgba(234,234,234,0.7);
+  font-size: 0.8rem;
+}
+
+.card-meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 0.8rem 0;
+  color: rgba(234,234,234,0.85);
+}
+.card-meta span{
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  line-height: 1;
+}
+.card-meta i{
+  font-size: 0.85rem;
+  color: #2E86AB;
+}
+
+.price{
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.price strong{
+  color: #C9A66B;
+  font-weight: 600;
+}
+
+/* WHY CHOOSE US */
+.why-choose-us{
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #f5e6c8, #2b2f3f);
+}
+
+.why-card{
+  background: linear-gradient(180deg, #1f2330, #2c3245);
+  border-radius: 1.2rem;
+  padding: 2.2rem 1.6rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card i{
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg,#C9A66B, #2E86AB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why-card h5{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #EAEAEA;
+  margin-bottom: 0.6rem;
+}
+
+.why-card p{
+  font-size: 0.9rem;
+  color: rgba(234,234,234,0.8);
+  line-height: 1.5;
+}
+
+.why-card:hover{
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.45);
+  }
+
+.why-card:hover i{
+  transform: scale(1.2);
+}
+
+
 
 
