@@ -12,6 +12,7 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-inner">
+            <!-- <img src="/images/logo.png" alt="Logo" class="nav-logo"> -->
             <div class="logo">ExploreX</div>
 
             <!-- Hamburger menu for mobile -->
@@ -25,27 +26,32 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
                 <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
 
                 <li><a href="booking.html" class="nav-btn">Book Now</a></li>
             </ul>
         </div>
     </nav>
-
+     
     <!--  HOME SECTION -->
     <section class="home" id="home">
         <div  class="container home-content">
-            <h1>
-                Explore the World <br>
-                <span>With Confidence</span>
+
+            <span class="hero-tagline">Luxury TRAVEL EXPERIENCES</span>
+
+            <h1  class="hero-title">
+                Travel That <br>
+                <span>Takes You Further</span>
             </h1>
 
-            <p>Discover breathtaking destinations, curated journeys, and unforgettable travel experiences crafted just for you.</p>
+            <h4 class="hero-subline">
+                Curated destinations • Seamless journeys • Unforgettable memories
+            </h4>
 
             <div class="home-actions">
-                <a href="#destinations" class="btn-primary">Explore Now<i class="fa-solid fa-arrow-down"></i></a>
-                <a href="#contact" class="btn-secondary">Contact Us</a>
+                <a href="#destinations" class="btn-primary">Explore Destinations<i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#contact" class="btn-secondary">Plan My Trip</a>
             </div>
         </div>
     </section>
@@ -141,48 +147,255 @@
      <section class="why-choose-us" id="why-us">
         <div class="container">
 
-            <div class="section-header">
-                <h2 class="section-title">Why Choose ExploreX</h2>
-                <p class="section-subtitle">We make travel simple, safe, and unforgettable</p>
+          <div class="section-header">
+            <h2 class="section-title">Why Choose ExploreX</h2>
+            <p class="section-subtitle">We make travel simple, safe, and unforgettable</p>
+          </div>
+
+          <div class="why-row">
+            <div class="why-circle float1">
+              <i class="fa-solid fa-globe"></i>
+              <h5>Handpicked Destinations</h5>
+              <p>Carefully curated places loved by travelers worldwide.</p>
             </div>
 
-            <div class="row g-4 mt-4">
-
-            <div class="col-lg-3 col-md-6">
-                <div class="why-card">
-                    <i class="fa-solid fa-globe"></i>
-                    <h5>Handpicked Destinations</h5>
-                    <p>Carefully curated places loved by travelers worldwide.</p>
-                </div>
+            <div class="why-circle float2">
+              <i class="fa-solid fa-wallet"></i>
+              <h5>Best Price Guarantee</h5>
+              <p>Transparent pricing with no hidden charges.</p>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="why-card">
-                    <i class="fa-solid fa-wallet"></i>
-                    <h5>Best Price Guarantee</h5>
-                    <p>Transparent pricing with no hidden charges.</p>
-                </div>
+            <div class="why-circle float3">
+              <i class="fa-solid fa-shield-heart"></i>
+              <h5>Safe & Secure</h5>
+              <p>Your safety and privacy are our top priorities.</p>
             </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="why-card">
-                    <i class="fa-solid fa-shield-heart"></i>
-                    <h5>Safe & Secure</h5>
-                    <p>Your safety and privacy are our top priorities.</p>
-                </div>
+            <div class="why-circle float4">
+              <i class="fa-solid fa-headset"></i>
+              <h5>24/7 Support</h5>
+              <p>We’re here for you anytime, anywhere.</p>
             </div>
+          </div>
 
-            <div class="col-lg-3 col-md-6">
-                <div class="why-card">
-                    <i class="fa-solid fa-headset"></i>
-                    <h5>24/7 Support</h5>
-                    <p>We’re here for you anytime, anywhere.</p>
-                </div>
-            </div>
-
-            </div>
         </div>
-     </section>
+      </section>
+
+     <!-- TESTIMONIAL SECTION -->
+      <section class="testimonials" id="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Our Travelers Say</h2>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="testimonial-row">
+
+            <div class="testimonial-card">
+                <div class="destination-thumb">
+                    <img src="images/user1.png" alt="Maldives">
+                    <span class="destination-label">Maldives</span>
+                </div>
+               <div class="rating">★★★★★</div>
+              <p>Amazing experience, perfectly planned. Truly unforgettable!</p>
+              <h5>Sarah Williams</h5>
+              <span>Maldives • Luxury Trip</span>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="destination-thumb">
+                <img src="images/user2.png" alt="Kerala">
+                <span class="destination-label">Kerala</span>
+              </div>
+              <div class="rating">★★★★☆</div>
+              <p>Support team was super helpful throughout the journey.</p>
+              <h5>Rahul Nair</h5>
+              <span>Kerala • Family Trip</span>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="destination-thumb">
+                <img src="images/user3.png" alt="Dubai">
+                <span class="destination-label">Dubai</span>
+              </div>
+              <div class="rating">★★★★★</div>
+              <p>Best travel decision I made this year.</p>
+              <h5>Ayesha Khan</h5>
+              <span>Dubai • Solo Travel</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="testimonial-row">
+
+            <div class="testimonial-card">
+              <div class="destination-thumb">
+                <img src="images/user4.png" alt="Bali">
+                <span class="destination-label">Bali</span>
+              </div>
+              <div class="rating">★★★★★</div>
+              <p>Everything was smooth and perfectly organized.</p>
+              <h5>Daniel Roy</h5>
+              <span>Bali • Honeymoon</span>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="destination-thumb">
+                <img src="images/user5.png" alt="Goa">
+                <span class="destination-label">Goa</span>
+              </div>
+              <div class="rating">★★★★☆</div>
+              <p>Worth every penny. Highly recommended.</p>
+              <h5>Meera Das</h5>
+              <span>Goa • Weekend Trip</span>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="destination-thumb">
+                <img src="images/user6.png" alt="Europe">
+                <span class="destination-label">Europe</span>
+              </div>
+              <div class="rating">★★★★★</div>
+              <p>One of the best backpacking trips ever!</p>
+              <h5>Arjun Menon</h5>
+              <span>Europe • Backpacking</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button"
+        data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button"
+        data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+      <!-- CONTACT SECTION -->
+       <section class="contact" id="contact">
+          <div class="container contact-grid">
+
+            <!-- Image side -->
+            <div class="contact-image">
+              <img src="/images/image.png" alt="Travel Support">
+              <div class="image-overlay">
+                <h3>Let’s Plan Your Journey</h3>
+                <p>Luxury trips, seamless planning & 24/7 support.</p>
+              </div>
+            </div>
+
+            <!-- Form side -->
+            <div class="contact-content">
+              <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">
+                  Have questions or need help planning your trip? We’re here for you.
+                </p>
+              </div>
+
+              <form class="contact-form" onsubmit="submitForm(event)">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="Your Name">
+                  <span class="error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <input type="email" id="email" placeholder="Your Email">
+                  <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <textarea id="message" placeholder="Your Message"></textarea>
+                  <span class="error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+                <p class="success" id="successMsg"></p>
+              </form>
+              <!-- CONTACT INFO CARDS -->
+        <div class="contact-info-cards">
+
+          <div class="info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h5>Email Us</h5>
+            <p>support@explorex.com</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fa-solid fa-phone"></i>
+            <h5>Call Us</h5>
+            <p>+91 98765 43210</p>
+          </div>
+
+          <div class="info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h5>Location</h5>
+            <p>Kochi, Kerala, India</p>
+          </div>
+
+        </div>
+            </div>
+
+          </div>
+        </section>
+
+       <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container footer-grid">
+
+            <!-- brand -->
+             <div class="footer-brand">
+                <h3>ExploreX</h3>
+                <p>Making your travel dreams unforgettable.</p>
+
+                <!-- social icons -->
+              <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+             </div>
+
+             <!-- links -->
+              <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+
+              <!-- contact -->
+               <div class="footer-contact">
+                  <h4>Contact</h4>
+                  <p>Email: support@explorex.com</p>
+                  <p>Phone: +91 98765 43210</p>  
+               </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 ExploreX. All rights reserved.</p>
+            </div>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
